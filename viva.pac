@@ -7,7 +7,7 @@ function FindProxyForURL(url, host) {
 
 	   if (isInNet(host, "255.255.252.0"))
     {
-        return "PROXY 10.0.34.21:8888;";
+        return "PROXY 10.0.34.21:8888";
     }
     // All other requests go through port 8080 of proxy.example.com.
     // should that fail to respond, go directly to the WWW:
