@@ -5,7 +5,7 @@ function FindProxyForURL(url, host) {
         return "PROXY 10.0.34.21:8888; DIRECT";
     }
 
-	   if (isInNet(host, "255.255.252.0"))
+	   if (isInNet(host, "10.0.0.0","255.255.252.0"))
     {
         return "PROXY 10.0.34.21:8888";
     }
