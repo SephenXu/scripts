@@ -1,5 +1,6 @@
 function FindProxyForURL(url, host) {
 	if(isResolvable("10.0.34.21:8888")){
+		alert('resolvable!');
 		console.log('resolvable!');
 		if (shExpMatch(host, "*.api.xiaoying.co"))
 		{
@@ -7,6 +8,7 @@ function FindProxyForURL(url, host) {
 		}
 	}else{
 	        console.error('unresolvable!');
+		alert('unresolvable!');
 	}
 
 	if (isInNet(host, "10.0.0.0","255.255.252.0"))
